@@ -10,7 +10,6 @@ A stable, just-works reverse shell manager designed for streamlined operations.
 - Supports both **Windows** and **UNIX** shells  
 
 ### 🟢 Reverse Shell Management  
-- Seamlessly interact with multiple shells — no need to drop or reconnect  
 - Full support for both **Windows** and **UNIX-based** reverse shells  
 - Effortlessly enter, exit, or close sessions without disrupting your access  
 
