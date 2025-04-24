@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"log"
 	"net"
@@ -51,15 +52,15 @@ var userSessions = struct {
 
 // === CONFIG LOADING ===
 
-func loadConfig() (*Config, error) {
-	file, err := os.ReadFile("./config.json")
+func loadConfig(path string) (*Config, error) {
+	file, err := os.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("error reading config.json: %s", err)
+		return nil, fmt.Errorf("error reading config file: %s", err)
 	}
 
 	var config Config
 	if err := json.Unmarshal(file, &config); err != nil {
-		return nil, fmt.Errorf("error parsing config file config.json: %s", err)
+		return nil, fmt.Errorf("error parsing config file: %s", err)
 	}
 
 	return &config, nil
@@ -97,12 +98,16 @@ func handleConnection(conn *Connection) {
 // === MAIN LOOP ===
 
 func main() {
-	config, err := loadConfig()
+	configPath := flag.String("c", "./config.json", "Path to config file")
+	flag.Parse()
+
+	config, err := loadConfig(*configPath)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 
-	bot, err = cordkit.NewBot("./config.json")
+	bot, err = cordkit.NewBot(*configPath)
 	if err != nil {
 		log.Fatalf("Error creating bot: %v", err)
 	}
