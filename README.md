@@ -25,7 +25,7 @@ go build stellarlink.go
 
 ## Usage
 
-Create your config, this project uses []("https://github.com/pure-nomad/cordkit" "Cordkit") so refer to that documentation for better understanding.
+Create your config, this project uses [CordKit](https://github.com/pure-nomad/cordkit) so refer to that documentation for better understanding.
 
 Run the StellarLink server:
 ```sh
