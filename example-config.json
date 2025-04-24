@@ -1,0 +1,13 @@
+{
+    "lhost":"127.0.0.1",
+    "lport":"8080",
+    "bot_token": "",
+    "guild_id": "",
+    "active_category_id": "",
+    "dead_category_id": "",
+    "transcript_category_id": "",
+    "active_channel_prefix": "active_connection",
+    "dead_channel_prefix": "dead_connection",
+    "logging_enabled": true,
+    "custom_commands_enabled": true
+}
