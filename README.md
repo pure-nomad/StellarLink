@@ -23,6 +23,11 @@ A stable, just-works reverse shell manager designed for streamlined operations.
 - Auto-generated transcripts to keep a record of every session  
 - Organized channel structure keeps live and dead sessions cleanly separated  
 
+### Bot Commands
+- /list: List active connections
+- /select <id>: Select a connection to interact with
+- /cmd <command>: Run a command on the selected session
+
 ## Setup
 
 1. Clone the repository:
