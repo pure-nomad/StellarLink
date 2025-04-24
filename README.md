@@ -3,9 +3,26 @@
 A stable, just-works reverse shell manager designed for streamlined operations.
 
 ## Features
-- Efficient reverse shell management
-- Integration for Windows & *nix reverse shells.
-- Discord Webhook Integration for notifications
+
+- Manage multiple reverse shells without killing the connection  
+- Interactive sessions via CLI or **Discord** via [CordKit](https://github.com/pure-nomad/cordkit)  
+- Real-time Discord notifications  
+- Supports both **Windows** and **UNIX** shells  
+
+### 🟢 Reverse Shell Management  
+- Seamlessly interact with multiple shells — no need to drop or reconnect  
+- Full support for both **Windows** and **UNIX-based** reverse shells  
+- Effortlessly enter, exit, or close sessions without disrupting your access  
+
+### 🟢 CordKit Integration  
+- Execute commands remotely from your phone using Discord slash commands  
+- Instantly list and select sessions right from the Discord interface  
+- Remotely clean up dead sessions or channels — no terminal needed  
+
+### 🟢 Notifications  
+- Get notified in real-time the moment a new connection is established  
+- Auto-generated transcripts to keep a record of every session  
+- Organized channel structure keeps live and dead sessions cleanly separated  
 
 ## Setup
 
@@ -14,18 +31,14 @@ A stable, just-works reverse shell manager designed for streamlined operations.
 git clone https://github.com/pure-nomad/stellarlink.git && cd stellarlink
 ```
 
-2. Replace the Discord webhook constant (`discordWebhookURL`) in the source code with your discord webhook URL.
+2. Create your config, there is an example one provided in the repository, this project uses [CordKit](https://github.com/pure-nomad/cordkit) so refer to that documentation for better understanding.
 
-3. Modify the server's bind address in the source code to your desired IP and port. Default is `localhost:8080`.
-
-4. When steps 2 and 3 are done, build stellarlink:
+3. Build stellarlink:
 ```sh
 go build stellarlink.go
 ```
 
 ## Usage
-
-Create your config, this project uses [CordKit](https://github.com/pure-nomad/cordkit) so refer to that documentation for better understanding.
 
 Run the StellarLink server:
 ```sh
@@ -35,4 +48,3 @@ Run the StellarLink server:
 ## Ethical Usage
 
 StellarLink is developed strictly for ethical and educational purposes. Unauthorized use of this tool against systems or networks without explicit consent is illegal and unethical. The creator of this project assumes no liability for misuse.
-
