@@ -30,7 +30,7 @@ A stable, just-works reverse shell manager designed for streamlined operations.
 git clone https://github.com/pure-nomad/stellarlink.git && cd stellarlink
 ```
 
-2. Create your config, there is an example one provided in the repository, this project uses [CordKit](https://github.com/pure-nomad/cordkit) so refer to that documentation for better understanding.
+2. Create the config, there is an example one provided in the repository, refer to [CordKit](https://github.com/pure-nomad/cordkit) documentation for better understanding.
 
 3. Build stellarlink:
 ```sh
