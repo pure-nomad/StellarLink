@@ -9,16 +9,16 @@ A stable, just-works reverse shell manager designed for streamlined operations.
 - Real-time Discord notifications  
 - Supports both **Windows** and **UNIX** shells  
 
-### 🟢 Reverse Shell Management  
+### Reverse Shell Management  
 - Full support for both **Windows** and **UNIX-based** reverse shells  
 - Effortlessly enter, exit, or close sessions without disrupting your access  
 
-### 🟢 CordKit Integration  
+### CordKit Integration  
 - Execute commands remotely from your phone using Discord slash commands  
 - Instantly list and select sessions right from the Discord interface  
 - Remotely clean up dead sessions or channels — no terminal needed  
 
-### 🟢 Notifications  
+### Notifications  
 - Get notified in real-time the moment a new connection is established  
 - Auto-generated transcripts to keep a record of every session  
 - Organized channel structure keeps live and dead sessions cleanly separated  
